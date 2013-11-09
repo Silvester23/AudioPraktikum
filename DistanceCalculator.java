@@ -89,6 +89,11 @@ public class DistanceCalculator {
 		this.distanceFunction = distanceFunction;
 	}
 	
+	public void setWeightingByDistance(boolean value) {
+		this.weightingByDistance = value;
+	}
+	
+	
 	public double weight(double distance) {
 		if(this.weightingByDistance != true) {
 			return 1;
